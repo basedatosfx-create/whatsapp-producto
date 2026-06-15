@@ -6,8 +6,10 @@ exports.handler = async (event) => {
     body: `<!DOCTYPE html>
 <html>
 <head>
+  <meta property="og:title" content="Producto">
   <meta property="og:image" content="${img}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="${img}">
 </head>
 <body>
   <script>window.location.href = "${img}";</script>
